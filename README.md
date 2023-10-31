@@ -27,5 +27,6 @@ Test the extension locally using your browser's developer mode.
 Submit a pull request or package the changes for deployment.
 
 **Contributors:-**
-1)Lokhesh RJ(https://github.com/Lokheshrj) - Open Source Contributor
-2)Tarun SR  (https://github.com/Tarun0008) - Open Source Contributor
+1)Lokhesh RJ(https://github.com/Lokheshrj) - Open Source Contributor.
+
+2)Tarun SR  (https://github.com/Tarun0008) - Open Source Contributor.
