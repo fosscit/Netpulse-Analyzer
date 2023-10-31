@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Netpulse Analyzer</title>
+    <style>
+        .speedometer-container {
+            background-color: black;
+            position: relative;
+            width: 260px;
+            height: 250px;
+        }
+
+        .speedometer {
+            position: absolute;
+            width: 250px;
+            height: 200px;
+            left: 5px;
+            background-color: black;
+        }
+
+        .speedometer-base {
+            fill: rgb(0, 0, 0);
+        }
+
+        .speedometer-progress {
+            fill: #03fbbd;;
+        }
+
+        .needle {
+            fill: red;
+            transition: transform 0.5s ease;
+            transform-origin: 50% 100%;
+        }
+
+        .speed-text {
+            text-align: center;
+            position: absolute;
+            top: 198px;
+            left: 50px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .reading {
+            position: absolute;
+            transform-origin: 50% 100%;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="speedometer-container">
+        <h1 style="text-align:center ; margin-top: 30px; left: 50%; color: white; background-color: black;">Netpulse
+            Analyzer</h1>
+        <svg class="speedometer" viewBox="0 0 100 50">
+            <path class="speedometer-base" d="M 0,50 A 50,50 0 0,1 100,50 L 100,0 L 0,0 Z"></path>
+            <path class="speedometer-progress" d="M 0,50 A 50,50 0 0,1 100,50 L 100,0 L 0,0 Z" id="progress"></path>
+            <polygon class="needle" points="49,48 50,10 51,48" id="needle"></polygon>
+            <div class="readings">
+                <div class="reading" style="left: 5%; top: 85%; transform: translateX(-0%) translateY(-100%)">0</div>
+                <div class="reading" style="left: 10%; top: 67%; transform: translateX(-50%) translateY(-100%)">20</div>
+                <div class="reading" style="left: 27%; top: 49%; transform: translateX(-50%) translateY(-100%)">40</div>
+                <div class="reading" style="left: 50%; top: 42%; transform: translateX(-50%) translateY(-100%)">60</div>
+                <div class="reading" style="left: 72%; top: 49%; transform: translateX(-50%) translateY(-100%)">80</div>
+                <div class="reading" style="left: 88%; top: 67%; transform: translateX(-50%) translateY(-100%)">100</div>
+                <div class="reading" style="left: 97%; top: 85%; transform: translateX(-100%) translateY(-100%)">120</div>
+            </div>
+        </svg>
+        <div class="speed-text" id="speed-text">0 Mbps</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
