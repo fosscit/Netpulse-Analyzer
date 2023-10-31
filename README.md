@@ -1,5 +1,6 @@
-# Netpulse Analyzer: Internet Speed Monitoring Extension with API Integration.This Chrome extension provides real-time monitoring of internet speed, ensuring users have access to accurate data through API integration.
+# Netpulse Analyzer: Internet Speed Monitoring Extension with API Integration.
 
+This Chrome extension provides real-time monitoring of internet speed, ensuring users have access to accurate data through API integration.
 **Features**:
 - Speed Calculation: Continuously monitors internet speed and provides real-time data on upload and download speeds.
 - API Integration: Utilizes a reliable API to ensure precise and up-to-date internet speed measurements.
